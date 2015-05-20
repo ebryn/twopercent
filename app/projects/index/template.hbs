@@ -1,0 +1,9 @@
+<h1>Projects</h1>
+
+Total number of projects: {{model.count}}
+
+<ul>
+  {{#each model.results as |project|}}
+    <li>{{link-to project.title 'projects.project' project.id}}</li>
+  {{/each}}
+</ul>
